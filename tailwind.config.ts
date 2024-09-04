@@ -24,7 +24,6 @@ const config: Config = {
       nobel: "#b2aba9",
       silk: "#beb2a7",
       black: "#312f2f",
-      gray: "#999999",
       beige2: "#FFF8E8",
     },
   },

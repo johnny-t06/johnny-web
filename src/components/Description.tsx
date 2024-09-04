@@ -6,6 +6,13 @@ import { useRef } from "react";
 interface DescriptionProps {
   value: string;
 }
+
+const contacts = [
+  { title: "About", link: "" },
+  { title: "Email", link: "emailto:johnnytanwork1@gmail.com" },
+  { title: "LinkedIn", link: "https://www.linkedin.com/in/johnny-tan1/" },
+];
+
 export const Description = (props: DescriptionProps) => {
   const { value } = props;
   const element = useRef<HTMLDivElement>(null);
@@ -19,8 +26,8 @@ export const Description = (props: DescriptionProps) => {
   // });
 
   return (
-    <div className="">
-      <h1 className="font-satoshi text-4xl "> Johnny Tan</h1>
+    <div className="sticky top-1/2 transform-translate-y-1/2">
+      <h1 className="font-satoshi text-4xl font-bold "> Johnny Tan</h1>
       <motion.p
         className="text-lg"
         ref={element}
@@ -28,6 +35,17 @@ export const Description = (props: DescriptionProps) => {
       >
         {value}
       </motion.p>
+      <div className="flex gap-4">
+        {contacts.map((contact, index) => (
+          <a
+            href={contact.link}
+            key={index}
+            className="text-gray-200 hover:text-gray-700"
+          >
+            {contact.title}
+          </a>
+        ))}
+      </div>
     </div>
   );
 };

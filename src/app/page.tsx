@@ -20,7 +20,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex w-3/5 bg-beige2 flex-col ">
-          <div className="h-[50vh]"> </div>
+          <div className=""> </div>
           <Description value={value} />{" "}
         </div>
       </div>

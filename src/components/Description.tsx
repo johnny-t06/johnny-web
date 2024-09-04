@@ -1,6 +1,11 @@
 "use client";
-import { useScroll, motion } from "framer-motion";
-import React from "react";
+import {
+  useScroll,
+  motion,
+  useAnimation,
+  AnimationControls,
+} from "framer-motion";
+import React, { useEffect } from "react";
 import { useRef } from "react";
 import Image from "next/image";
 import johnnyhead from "../public/images/johnny-head.jpg";
@@ -9,7 +14,7 @@ interface DescriptionProps {
 }
 
 const contacts = [
-  { title: "About", link: "" },
+  { title: "About", link: "#about" },
   { title: "Email", link: "emailto:johnnytanwork1@gmail.com" },
   { title: "LinkedIn", link: "https://www.linkedin.com/in/johnny-tan1/" },
 ];
@@ -27,7 +32,7 @@ export const Description = (props: DescriptionProps) => {
   // });
 
   return (
-    <div className="sticky top-1/3 transform-translate-y-1/2 flex flex-col gap-4">
+    <div className="z-10 sticky top-1/3 transform-translate-y-1/2 flex flex-col gap-4">
       <Image
         src={johnnyhead}
         alt="Johnny's head"

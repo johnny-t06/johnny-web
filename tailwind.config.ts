@@ -24,6 +24,7 @@ const config: Config = {
         silk: "#beb2a7",
         black: "#312f2f",
         beige2: "#FFF8E8",
+        white: "#EEF7FF",
       },
     },
   },

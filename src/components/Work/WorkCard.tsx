@@ -10,10 +10,9 @@ export const WorkCard = (props: RoleCardProps) => {
   return (
     <div className="p-4 rounded-lg flex flex-row justify-between">
       <div>
-        <h1 className="font-satoshi">{title}</h1>
-        <p className="font-switzer italic"> {description}</p>
+        <h1 className="font-satoshi font-bold">{title}</h1>
       </div>
-      <p className="text-gray">{date}</p>
+      <p className="text-gray-500">{date}</p>
     </div>
   );
 };

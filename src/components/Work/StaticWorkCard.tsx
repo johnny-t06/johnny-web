@@ -25,7 +25,7 @@ export const StaticWorkCard = (props: RoleCardProps) => {
                   className="min-w-12 w-12 h-12 flex rounded-lg"
                 />
               ) : (
-                <div className="w-12  h-12"></div>
+                <div className="w-12 h-12"></div>
               )}
             </div>
 

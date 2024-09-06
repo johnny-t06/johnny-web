@@ -24,19 +24,19 @@
 
 @font-face {
   font-family: "satoshi";
-  src: url("../public/fonts/Satoshi-Regular.otf") format("opentype");
+  src: url("../../public/fonts/Satoshi-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "satoshi-bold";
-  src: url("../public/fonts/Satoshi-Bold.otf") format("opentype");
+  src: url("../../public/fonts/Satoshi-Bold.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "switzer";
-  src: url("../public/fonts/Switzer-ExtralightItalic.otf") format("opentype");
+  src: url("../../public/fonts/Switzer-ExtralightItalic.otf") format("opentype");
   font-weight: normal;
   font-style: italic;
 }

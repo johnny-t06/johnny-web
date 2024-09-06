@@ -20,6 +20,7 @@ const config: Config = {
       colors: {
         beige: "#E8E8E8",
         green: "#e0e5d6",
+        mint: "#F0FFF0",
         nobel: "#b2aba9",
         silk: "#beb2a7",
         black: "#312f2f",

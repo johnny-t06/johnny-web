@@ -32,7 +32,24 @@ export const Description = (props: DescriptionProps) => {
   // });
 
   return (
-    <div className="z-10 sticky top-1/3 transform-translate-y-1/2 flex flex-col gap-4">
+    <div className="z-10 sticky top-1/3 transform-translate-y-1/2 flex flex-row gap-5 ">
+      <div className="flex flex-col justify-center gap-3">
+        <h1 className="font-satoshi-bold text-4xl font-bold "> Johnny Tan</h1>
+        <p className="text-lg" ref={element}>
+          {value}
+        </p>
+        <div className="flex gap-4">
+          {contacts.map((contact, index) => (
+            <a
+              href={contact.link}
+              key={index}
+              className="text-gray-500 hover:text-gray-800"
+            >
+              {contact.title}
+            </a>
+          ))}
+        </div>
+      </div>
       <Image
         src={johnnyhead}
         alt="Johnny's head"
@@ -40,21 +57,6 @@ export const Description = (props: DescriptionProps) => {
         height={190}
         className="rounded-md"
       />
-      <h1 className="font-satoshi-bold text-4xl font-bold "> Johnny Tan</h1>
-      <p className="text-lg" ref={element}>
-        {value}
-      </p>
-      <div className="flex gap-4">
-        {contacts.map((contact, index) => (
-          <a
-            href={contact.link}
-            key={index}
-            className="text-gray-500 hover:text-gray-800"
-          >
-            {contact.title}
-          </a>
-        ))}
-      </div>
     </div>
   );
 };

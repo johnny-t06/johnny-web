@@ -16,8 +16,7 @@
     "qss": "^3.0.0",
     "react": "^18",
     "react-dom": "^18",
-    "tailwind-merge": "^2.5.2",
-    "zod": "^3.23.8"
+    "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
     "@types/node": "^20",

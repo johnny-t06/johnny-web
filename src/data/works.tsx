@@ -1,9 +1,9 @@
 import { StaticImageData } from "next/image";
 import kaboo from "../../public/images/kaboo.png";
-// import fb from "../../public/images/fb.svg";
 import fb from "../../public/images/newfb.png";
 import tufts from "../../public/images/tufts.png";
-
+import breadroses from "../../public/images/breadroses.png";
+import legacyproj from "../../public/images/the_legacy_project_inc_logo.jpg";
 type WorkType = "project" | "role";
 export interface WorkItem {
   title: string;
@@ -32,7 +32,7 @@ export const currentWorks: WorkItem[] = [
     date: "2024",
     url: "https://breadandroseskitchen.org/about-us",
     type: "role",
-    src: "",
+    src: breadroses,
     previewsrc: "",
   },
 ];
@@ -41,7 +41,7 @@ export const prevWorks: WorkItem[] = [
     title: "Freebites",
     description: "socializing free food against waste/insecurity",
     date: "2023-24 ",
-    url: "",
+    url: "https://apps.apple.com/us/app/freebites/id6664051907",
     previewsrc: "/images/fb-preview.png",
     type: "role",
     static: true,
@@ -63,7 +63,7 @@ export const prevWorks: WorkItem[] = [
     url: "https://www.thelegacyproj.org",
     type: "role",
     previewsrc: "",
-    src: "",
+    src: legacyproj,
   },
   {
     title: "OfficeMinutes",
@@ -73,7 +73,7 @@ export const prevWorks: WorkItem[] = [
     previewsrc: "/images/om-preview.png",
     type: "project",
     static: true,
-    src: "",
+    src: tufts,
   },
 ];
 

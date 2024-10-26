@@ -13,16 +13,14 @@ export const WorkCard = (props: RoleCardProps) => {
       <LinkPreview url={url}>
         <div className="md:flex-row dark:hover:bg-neutral-800 cursor-pointer p-4 rounded-xl flex flex-row justify-between w-full hover:bg-neutral-50">
           <div className="flex flex-row gap-4">
-            <div>
+            <div className="min-w-12 min-h-12">
               {src ? (
                 <Image
                   src={src}
                   alt={title}
-                  className="w-12 h-12 object-fill rounded-lg"
+                  className=" h-12 w-12 rounded-lg"
                 />
-              ) : (
-                <div className="w-12 h-12"></div>
-              )}
+              ) : null}
             </div>
 
             <div className="flex flex-col">

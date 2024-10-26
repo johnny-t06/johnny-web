@@ -1,3 +1,5 @@
+import Image from "next/image";
+import logoicon from "../../public/images/logoicon.jpg";
 const contacts = [
   { title: "About", link: "#about" },
   { title: "Email", link: "mailto:johnnytanwork1@gmail.com" },
@@ -8,7 +10,7 @@ const contacts = [
 export const Header = () => {
   return (
     <div>
-      <NameTile />
+      <LogoTile />
       <div className="fixed flex gap-4 top-0 right-0 p-4 ">
         {contacts.map((contact, index) => (
           <a
@@ -32,6 +34,16 @@ export const NameTile = () => {
         href="/"
       >
         johnnytan.work
+      </a>
+    </div>
+  );
+};
+
+export const LogoTile = () => {
+  return (
+    <div className="fixed top-0 left-0 p-4">
+      <a href="/">
+        <Image src={logoicon} alt="logo" className="w-12 h-12" />
       </a>
     </div>
   );

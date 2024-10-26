@@ -3,7 +3,7 @@ import kaboo from "../../public/images/kaboo.png";
 import fb from "../../public/images/newfb.png";
 import tufts from "../../public/images/tufts.png";
 import breadroses from "../../public/images/breadroses.png";
-import legacyproj from "../../public/images/the_legacy_project_inc_logo.jpg";
+import legacyproj from "../../public/images/legacyproj.png";
 type WorkType = "project" | "role";
 export interface WorkItem {
   title: string;
@@ -35,8 +35,6 @@ export const currentWorks: WorkItem[] = [
     src: breadroses,
     previewsrc: "",
   },
-];
-export const prevWorks: WorkItem[] = [
   {
     title: "Freebites",
     description: "socializing free food against waste/insecurity",
@@ -47,6 +45,8 @@ export const prevWorks: WorkItem[] = [
     static: true,
     src: fb,
   },
+];
+export const prevWorks: WorkItem[] = [
   {
     title: "Kaboo",
     description: "making online shopping easy",

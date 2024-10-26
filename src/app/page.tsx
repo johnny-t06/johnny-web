@@ -4,10 +4,10 @@ import { Header } from "@/components/Header";
 import { WorkContainer } from "@/components/Work/WorkContainer";
 import { currentWorks, prevWorks } from "@/data/works";
 
-export default function Home() {
-  const allWorks = [...currentWorks, ...prevWorks];
-  const value = "Software engineer, senior @ Tufts, badminton enthusiast";
+const allWorks = [...currentWorks, ...prevWorks];
+const value = "Software engineer, senior @ Tufts, badminton enthusiast";
 
+export default function Home() {
   return (
     <div>
       <div className="flex h-[200vh]">

@@ -4,6 +4,7 @@ import fb from "../../public/images/newfb.png";
 import tufts from "../../public/images/tufts.png";
 import breadroses from "../../public/images/breadroses.png";
 import legacyproj from "../../public/images/legacyproj.png";
+
 type WorkType = "project" | "role";
 export interface WorkItem {
   title: string;
@@ -20,7 +21,7 @@ export const currentWorks: WorkItem[] = [
   {
     title: "Algorithms @ Tufts",
     description: "teaching assistant",
-    date: "2024",
+    date: "2024-25",
     url: "http://www.cs.tufts.edu/comp/160/",
     type: "role",
     previewsrc: "",
@@ -29,7 +30,7 @@ export const currentWorks: WorkItem[] = [
   {
     title: "Bread and Roses",
     description: "web calendar + mass comm.",
-    date: "2024",
+    date: "2024-25",
     url: "https://breadandroseskitchen.org/about-us",
     type: "role",
     src: breadroses,
@@ -38,7 +39,7 @@ export const currentWorks: WorkItem[] = [
   {
     title: "Freebites",
     description: "socializing free food against waste/insecurity",
-    date: "2023-24 ",
+    date: "2023-25 ",
     url: "https://apps.apple.com/us/app/freebites/id6664051907",
     previewsrc: "/images/fb-preview.png",
     type: "role",

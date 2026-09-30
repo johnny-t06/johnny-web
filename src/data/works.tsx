@@ -1,5 +1,4 @@
 import { StaticImageData } from "next/image";
-import kaboo from "../../public/images/kaboo.png";
 import fb from "../../public/images/newfb.png";
 import tufts from "../../public/images/tufts.png";
 import breadroses from "../../public/images/breadroses.png";
@@ -48,15 +47,6 @@ export const currentWorks: WorkItem[] = [
   },
 ];
 export const prevWorks: WorkItem[] = [
-  {
-    title: "Kaboo",
-    description: "making online shopping easy",
-    date: "2024",
-    url: "https://www.joinkaboo.com",
-    previewsrc: "",
-    type: "role",
-    src: kaboo,
-  },
   {
     title: "The Legacy Project",
     description: "elderly stories + school chapter expansion",

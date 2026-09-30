@@ -2,7 +2,7 @@
 import * as HoverCardPrimitive from "@radix-ui/react-hover-card";
 import Image from "next/image";
 import { encode } from "qss";
-import React from "react";
+import { useState, useSyncExternalStore } from "react";
 import {
   AnimatePresence,
   motion,
@@ -54,13 +54,13 @@ export const LinkPreview = ({
     src = imageSrc;
   }
 
-  const [isOpen, setOpen] = React.useState(false);
+  const [isOpen, setOpen] = useState(false);
 
-  const [isMounted, setIsMounted] = React.useState(false);
-
-  React.useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  const isMounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
 
   const springConfig = { stiffness: 100, damping: 15 };
   const x = useMotionValue(0);

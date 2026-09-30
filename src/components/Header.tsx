@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import logoicon from "../../public/images/logoicon.jpg";
 const contacts = [
   { title: "About", link: "#about" },
@@ -29,12 +30,12 @@ export const Header = () => {
 export const NameTile = () => {
   return (
     <div className="fixed top-0 left-0 p-4">
-      <a
+      <Link
         className=" font-satoshi-bold text-gray-800 hover:text-black "
         href="/"
       >
         johnnytan.work
-      </a>
+      </Link>
     </div>
   );
 };
@@ -42,9 +43,9 @@ export const NameTile = () => {
 export const LogoTile = () => {
   return (
     <div className="fixed top-0 left-0 p-4">
-      <a href="/">
+      <Link href="/">
         <Image src={logoicon} alt="logo" className="w-12 h-12" />
-      </a>
+      </Link>
     </div>
   );
 };

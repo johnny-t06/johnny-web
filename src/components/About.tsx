@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 export const About = () => {
   const value =
-    "Hello! I'm Johnny. I'm from San Francisco and currently studying cs at Tufts. I enjoy all things coding - building, leading, and learning. In my free time, I balance badminton, running, and checking out the newest restaurants in town.";
+    "Hello! I'm Johnny and I'm from San Francisco. I'm currently building all things frontend at Veeva Systems. I enjoy all things coding - building, leading, and learning. In my free time, I balance badminton, running, and checking out the newest restaurants in town.";
   const words = value.split(" ");
   const element = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({

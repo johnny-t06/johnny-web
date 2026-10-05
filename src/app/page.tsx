@@ -5,7 +5,8 @@ import { WorkContainer } from "@/components/Work/WorkContainer";
 import { currentWorks, prevWorks } from "@/data/works";
 
 const allWorks = [...currentWorks, ...prevWorks];
-const value = "Software engineer @ Veeva Systems, badminton enthusiast";
+const value =
+  "Associate software engineer @ Veeva Systems, badminton enthusiast";
 
 export default function Home() {
   return (

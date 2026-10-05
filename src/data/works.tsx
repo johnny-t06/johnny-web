@@ -3,6 +3,7 @@ import fb from "../../public/images/newfb.png";
 import tufts from "../../public/images/tufts.png";
 import breadroses from "../../public/images/breadroses.png";
 import legacyproj from "../../public/images/legacyproj.png";
+import veeva from "../../public/images/veeva.png";
 
 type WorkType = "project" | "role";
 export interface WorkItem {
@@ -17,6 +18,15 @@ export interface WorkItem {
 }
 
 export const currentWorks: WorkItem[] = [
+  {
+    title: "Veeva Systems",
+    description: "associate software engineer, tinkering with all things ui",
+    date: "2025-26",
+    url: "https://www.veeva.com/",
+    type: "role",
+    previewsrc: "",
+    src: veeva,
+  },
   {
     title: "Algorithms @ Tufts",
     description: "teaching assistant",

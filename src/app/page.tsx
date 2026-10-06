@@ -1,9 +1,7 @@
 import { About } from "@/components/About";
 import { Description } from "@/components/Description";
-import { ArrowUpRight } from "@/components/ArrowUpRight";
-import { CurrentYear } from "@/components/CurrentYear";
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { socials } from "@/data/contacts";
 import { PeekHint } from "@/components/Work/PeekHint";
 import { WorkContainer } from "@/components/Work/WorkContainer";
 import { currentWorks, prevWorks } from "@/data/works";
@@ -55,26 +53,7 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="lg:hidden bg-black text-white px-4 pt-10 pb-12 sm:px-6 flex flex-col gap-6">
-        <div className="font-satoshi-bold text-[28px] leading-tight">
-          Say hi.
-        </div>
-        <div className="flex flex-col">
-          {socials.map((s) => (
-            <a
-              key={s.title}
-              href={s.link}
-              className="h-[52px] flex items-center justify-between border-b border-white/20 text-[17px]"
-            >
-              {s.title}
-              <ArrowUpRight />
-            </a>
-          ))}
-        </div>
-        <div className="text-[13px] text-nobel">
-          © <CurrentYear /> johnnytan.work
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

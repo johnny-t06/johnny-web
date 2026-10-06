@@ -9,11 +9,17 @@ export const About = () => {
   const element = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start end", "start 25vh"],
+    // Finish when the paragraph's bottom reaches 75% down the viewport. Only
+    // the mobile footer sits below it, so a "start"-based end point can be
+    // further than the page can scroll and leave the last words faded.
+    offset: ["start end", "end 75%"],
   });
 
   return (
-    <p ref={element} className="flex flex-wrap font-satoshi text-lg ">
+    <p
+      ref={element}
+      className="flex flex-wrap font-satoshi text-[22px] leading-[1.45] lg:text-lg lg:leading-7"
+    >
       {words.map((word, index) => {
         const start = index / words.length;
         const end = start + 1 / words.length;

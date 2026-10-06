@@ -16,6 +16,7 @@ const config: Config = {
       },
       fontFamily: {
         satoshi: ["satoshi", "sans-serif"],
+        "satoshi-bold": ["satoshi-bold", "sans-serif"],
         switzer: ["switzer", "sans-serif"],
       },
       colors: {
@@ -27,6 +28,11 @@ const config: Config = {
         black: "#312f2f",
         beige2: "#FFF8E8",
         white: "#EEF7FF",
+        espresso: "#3b2f29",
+        cream: "#f7efe6",
+        "cream-muted": "#e0d3c7",
+        muted: "#5b6370",
+        line: "#dbe5ee",
       },
     },
   },

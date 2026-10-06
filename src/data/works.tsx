@@ -21,12 +21,14 @@ export const currentWorks: WorkItem[] = [
   {
     title: "Veeva Systems",
     description: "associate software engineer, tinkering with all things ui",
-    date: "2025-26",
+    date: "2025-now",
     url: "https://www.veeva.com/",
     type: "role",
     previewsrc: "",
     src: veeva,
   },
+];
+export const prevWorks: WorkItem[] = [
   {
     title: "Algorithms @ Tufts",
     description: "teaching assistant",
@@ -55,8 +57,6 @@ export const currentWorks: WorkItem[] = [
     static: true,
     src: fb,
   },
-];
-export const prevWorks: WorkItem[] = [
   {
     title: "The Legacy Project",
     description: "elderly stories + school chapter expansion",

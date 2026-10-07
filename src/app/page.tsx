@@ -7,8 +7,10 @@ import { WorkContainer } from "@/components/Work/WorkContainer";
 import { currentWorks, prevWorks } from "@/data/works";
 
 const allWorks = [...currentWorks, ...prevWorks];
-const value =
-  "Associate software engineer @ Veeva Systems, badminton enthusiast";
+const tagline = [
+  "Associate software engineer @ Veeva Systems,",
+  "badminton enthusiast",
+];
 
 export default function Home() {
   return (
@@ -20,16 +22,23 @@ export default function Home() {
             id="work"
             className="flex flex-col gap-5 px-4 pt-2 pb-10 sm:px-6 lg:p-0 scroll-mt-14 lg:scroll-mt-0"
           >
-            <div className="flex items-baseline justify-between lg:hidden">
+            <div className="flex items-center justify-between lg:hidden">
               <h2 className="font-satoshi-bold text-[13px] tracking-[0.08em] uppercase text-muted">
                 Work
               </h2>
-              <PeekHint />
+              <PeekHint
+                action="Hold"
+                className="hidden [@media(hover:none)]:flex"
+              />
             </div>
+            <PeekHint
+              action="Hover"
+              className="hidden lg:flex lg:self-end lg:text-hint"
+            />
             <WorkContainer works={allWorks} />
           </div>
           <div className="order-first lg:order-none">
-            <Description value={value} />
+            <Description lines={tagline} />
           </div>
         </div>
       </div>

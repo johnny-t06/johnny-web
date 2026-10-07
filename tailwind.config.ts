@@ -56,8 +56,9 @@ const config: Config = {
         "work-title": fluid(22, 17),
         "work-desc": fluid(18, 14),
         "work-date": fluid(16, 13),
+        hint: fluid(14, 13),
         "hero-title": fluid(80, 44),
-        "hero-body": fluid(27, 17),
+        "hero-body": fluid(22, 12),
         about: fluid(26, 18),
         "avatar-name": fluid(24, 18),
         "avatar-place": fluid(19, 15),
@@ -68,6 +69,18 @@ const config: Config = {
         "contact-handle": fluid(20, 14),
         "footer-note": fluid(18, 14),
         wordmark: fluid(336, 0),
+      },
+      // The peek hint's birdie flying along its arc (see PeekHint).
+      keyframes: {
+        serve: {
+          "0%": { offsetDistance: "0%", opacity: "0" },
+          "10%": { opacity: "1" },
+          "70%": { offsetDistance: "100%", opacity: "1" },
+          "85%, 100%": { offsetDistance: "100%", opacity: "0" },
+        },
+      },
+      animation: {
+        serve: "serve 2.8s cubic-bezier(.3,.1,.3,1) infinite",
       },
       fontFamily: {
         satoshi: ["satoshi", "sans-serif"],

@@ -11,7 +11,6 @@ import {
   useSpring,
 } from "framer-motion";
 import Link from "next/link";
-import { markPeekUsed } from "@/lib/peekHint";
 import { cn } from "@/lib/utils";
 
 type LinkPreviewProps = {
@@ -161,7 +160,6 @@ export const LinkPreview = ({
     peekTimer.current = setTimeout(() => {
       didPeek.current = true;
       setPeeking(true);
-      markPeekUsed();
       navigator.vibrate?.(10);
     }, PEEK_DELAY_MS);
   };

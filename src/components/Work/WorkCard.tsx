@@ -14,7 +14,7 @@ export const WorkCard = (props: RoleCardProps) => {
   return (
     <div>
       <LinkPreview url={url} {...previewProps}>
-        <div className="cursor-pointer py-3.5 lg:-mx-4 lg:px-4 lg:py-work-row-y lg:rounded-xl flex flex-row justify-between gap-3 w-full border-b border-line lg:border-0 lg:hover:bg-neutral-50 lg:dark:hover:bg-neutral-800">
+        <div className="cursor-pointer py-3.5 lg:-mx-4 lg:px-4 lg:py-work-row-y lg:rounded-xl flex flex-row justify-between gap-3 border-b border-line lg:border-0 lg:hover:bg-neutral-50 lg:dark:hover:bg-neutral-800">
           <div className="flex flex-row gap-3.5 lg:gap-work-gap">
             <div className="min-w-11 min-h-11 lg:min-w-work-logo lg:min-h-work-logo">
               {src ? (

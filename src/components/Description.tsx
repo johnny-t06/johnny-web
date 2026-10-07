@@ -1,11 +1,12 @@
 import Image from "next/image";
 import johnnyhead from "../../public/images/johnny-head.jpg";
 interface DescriptionProps {
-  value: string;
+  // Read as one sentence on mobile; on desktop each entry starts a new line.
+  lines: string[];
 }
 
 export const Description = (props: DescriptionProps) => {
-  const { value } = props;
+  const { lines } = props;
 
   return (
     <div className="flex flex-col-reverse items-start lg:flex-row lg:items-center gap-5 lg:gap-hero-gap px-4 pt-8 pb-9 sm:px-6 lg:p-0">
@@ -14,7 +15,12 @@ export const Description = (props: DescriptionProps) => {
           Johnny Tan
         </h1>
         <p className="font-satoshi text-[17px] leading-relaxed text-muted lg:text-hero-body lg:leading-[1.4]">
-          {value}
+          {lines.map((line, index) => (
+            <span key={index} className="lg:block lg:whitespace-nowrap">
+              {index > 0 ? " " : null}
+              {line}
+            </span>
+          ))}
         </p>
       </div>
       <Image

@@ -24,7 +24,7 @@ export const Header = () => {
             <a
               href={contact.link}
               key={index}
-              className="h-12 px-3.5 flex items-center font-satoshi-bold text-nav text-[#6e6259] hover:text-espresso"
+              className="h-12 px-3.5 flex items-center font-satoshi text-nav text-[#6e6259] hover:text-espresso"
             >
               {contact.title}
             </a>

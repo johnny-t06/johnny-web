@@ -9,16 +9,13 @@ export const About = () => {
   const element = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    // Finish when the paragraph's bottom reaches 75% down the viewport. Only
-    // the mobile footer sits below it, so a "start"-based end point can be
-    // further than the page can scroll and leave the last words faded.
     offset: ["start end", "end 75%"],
   });
 
   return (
     <p
       ref={element}
-      className="flex flex-wrap font-satoshi text-[22px] leading-[1.45] lg:text-lg lg:leading-7"
+      className="flex flex-wrap font-satoshi text-[22px] leading-[1.45] lg:text-about lg:leading-[1.6]"
     >
       {words.map((word, index) => {
         const start = index / words.length;
@@ -46,7 +43,10 @@ const Word = (props: WordProps) => {
   const { word, progress, range } = props;
   const opacity = useTransform(progress, range, [0.3, 1]);
   return (
-    <motion.span style={{ opacity }} className="mr-1 mt-1">
+    <motion.span
+      style={{ opacity }}
+      className="mr-1 mt-1 lg:mr-[0.26em] lg:mt-0"
+    >
       {word}
     </motion.span>
   );

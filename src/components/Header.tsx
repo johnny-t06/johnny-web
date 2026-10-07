@@ -15,20 +15,22 @@ const contacts = [aboutLink, ...socials];
 export const Header = () => {
   return (
     <>
-      <div className="hidden lg:block">
-        <LogoTile />
-        <div className="fixed flex gap-4 top-0 right-0 p-4 ">
+      <header className="hidden lg:flex items-center justify-between w-full max-w-page mx-auto h-header-h px-gutter">
+        <Link href="/">
+          <Image src={logoicon} alt="logo" className="size-logo rounded-lg" />
+        </Link>
+        <nav className="flex gap-2 -mr-3.5">
           {contacts.map((contact, index) => (
             <a
               href={contact.link}
               key={index}
-              className="font-satoshi-bold text-gray-500 hover:text-gray-800"
+              className="h-12 px-3.5 flex items-center font-satoshi-bold text-nav text-[#6e6259] hover:text-espresso"
             >
               {contact.title}
             </a>
           ))}
-        </div>
-      </div>
+        </nav>
+      </header>
       <MobileHeader />
     </>
   );
@@ -211,16 +213,6 @@ export const NameTile = () => {
         href="/"
       >
         johnnytan.work
-      </Link>
-    </div>
-  );
-};
-
-export const LogoTile = () => {
-  return (
-    <div className="fixed top-0 left-0 p-4">
-      <Link href="/">
-        <Image src={logoicon} alt="logo" className="w-12 h-12" />
       </Link>
     </div>
   );

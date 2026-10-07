@@ -29,6 +29,7 @@ export const Description = (props: DescriptionProps) => {
         width={460}
         height={460}
         sizes="(min-width: 1024px) 18vw, 120px"
+        quality={90}
         priority
         className="rounded-[14px] w-24 h-24 sm:w-[120px] sm:h-[120px] lg:size-portrait lg:rounded-portrait object-cover"
       />
